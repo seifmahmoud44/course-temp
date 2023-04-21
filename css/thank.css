@@ -1,0 +1,20 @@
+.icon {
+    text-align: center;
+    margin: 60px 0;
+}
+
+.icon i{
+    font-size: 88px;
+    color: green;
+}
+
+
+.icon h1{
+    font-size: 58px;
+    font-weight: 400;
+}
+
+.icon p{
+    margin-bottom: 20px;
+}
+

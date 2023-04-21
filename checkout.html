@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/checkou.css">
+    <link rel="stylesheet" href="css/product.css">
+    <link rel="stylesheet" href="css/shop.css">
+    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/cart.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <title>checkout</title>
+</head>
+<body>
+
+
+<!-- header -->
+
+
+<header>
+    <div class="container">
+        <div class="search">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input placeholder="search" type="search">
+        </div>
+        <div class="logo">
+            <h1>Seif Eldeen Mahmooud</h1>
+        </div>
+        
+        <div class="icons">
+            <a><i class="fa-solid fa-user"></i></a>
+            <a><i class="fa-regular fa-heart"></i></a>
+            <a><i class="fa-solid fa-cart-shopping"></i></a>
+            <span>0</span>
+        </div>
+    </div>
+
+    <ul class="nav">
+        <li>
+            <a class="home" href="index.html">
+                HOME
+                <i class="fa-solid fa-angle-down"></i>
+                <ul class="drop">
+                    <li>link 1</li>
+                    <li>link 2</li>
+                    <li>link 3</li>
+                </ul>
+            </a>
+        </li>
+        <li>
+            <a class="home" href="about.html">ABOUT
+            <i class="fa-solid fa-angle-down"></i>
+
+            <ul class="drop">
+                <li>link 1</li>
+                <li>link 2</li>
+                <li>link 3</li>
+            </ul>
+            </a> 
+        </li>
+        <li><a href="shop.html">
+            SHOP
+        </a>
+        </li>
+        <li>CATALOGUE</li>
+        <li>NEW ARRIVALS</li>
+        <li>CONTACT</li>
+    </ul>
+
+</header>
+
+
+<!-- retarn -->
+
+<div class="return">
+    <div class="container">
+        <p>Returning Customer? <span>Click Here </span> To Login</p>
+    </div>
+</div>
+
+
+<!-- info -->
+
+<div class="check">
+    <div class="container">
+        <form action="">
+
+            <div class="left">
+                <h2>Billing Details</h2>
+                <div class="country">
+                    <label for="country">Country</label>
+                    <select name="" id="country">
+                        <option value="">select Your country</option>
+                        <option value="">Egypt</option>
+                        <option value="">USA</option>
+                        <option value="">UK</option>
+                    </select>
+                </div>
+                <div class="name">
+                    <div class="first">
+                        <label for="first">First Name</label>
+                        <input id="first" type="text">
+                    </div>
+
+                    <div class="last">
+                        <label for="last">Last Name</label>
+                        <input id="last" type="text">
+                    </div>
+                </div>
+
+                <div class="company">
+                    <label for="company">Company Name</label>
+                    <input id="company" type="text">
+                </div>
+
+                <div class="address">
+                    <label for="Address">Address</label>
+                    <input id="Address" type="text" placeholder="Street">
+                    <input id="Address" type="text" placeholder="Aoartment (Optional)">
+                </div>
+
+                <div class="four">
+                    <div class="s-z">
+                        <div class="state">
+                            <label for="state">State / Country</label>
+                            <input id="state" type="text">
+                        </div>
+
+                        <div class="zip">
+                            <label for="zip">Post / Zip</label>
+                            <input id="zip" type="text">
+                        </div>
+                    </div>
+                
+                    <div class="e-p">
+                        <div class="email">
+                            <label for="email">Email</label>
+                            <input id="email" type="email">
+                        </div>
+
+                        <div class="phone">
+                            <label for="phone">Phone</label>
+                            <input id="phone" type="tel">
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="creat">
+                    <input id="creat" type="checkbox">
+                    <label for="creat">Creat an account?</label>
+                </div>
+
+                <div class="ship">
+                    <input id="Ship" type="checkbox">
+                    <label for="Ship">Ship To Different Address</label>
+                </div>
+
+                <div class="other">
+                    <label for="other">Other Nots</label>
+                    <textarea  placeholder="Write Your Notes Here...." name="" id="other" cols="30" rows="10"></textarea>
+                </div>
+            </div>
+
+
+            <div class="right">
+                <div class="coupon">
+                    <h2>Coupon Code</h2>
+                    <p>Enter Your Coupon Code If You Have One</p>
+                    <div class="code">
+                        <form action="">
+                            <input type="text"  placeholder="Coupon Code">
+                            <input class="btn" type="submit" value="APPLY">
+                        </form>
+                    </div>
+                </div>
+
+                <div class="order">
+                    <h2>Your Order</h2>
+                    <div class="info">
+                        <div class="layer">
+                            <p>Product</p>
+                            <p>Total</p>
+                        </div>
+
+                        <div class="layer">
+                            <p>Top Up T-shirt X 1</p>
+                            <p>$250.00</p>
+                        </div>
+
+                        <div class="layer">
+                            <p>Polo shirt</p>
+                            <p>$250.00</p>
+                        </div>
+
+                        <div class="layer">
+                            <p>Cart Subtotal</p>
+                            <p>$250.00</p>
+                        </div>
+
+                        <div  class="layer not">
+                            <p>Order Total</p>
+                            <p>$250.00</p>
+                        </div>
+
+
+                        <h4>Direct Bank Transfer</h4>
+                        <h4>Cheque Payment</h4>
+                        <h4>Paypal</h4>
+                    </div>
+
+                    <a class="btn last" href="thank.html">PLACE ORDER</a>
+                </div>
+            </div>
+
+        </form>
+    </div>
+</div>
+
+
+
+<!-- footer -->
+
+<footer>
+    <div class="container">
+        <div class="f-part">
+            <h3>Nvigation</h3>
+            <div class="nav-links">
+                <ul class="links">
+                    <li>Sell Online</li>
+                    <li>Features</li>
+                    <li>Shopping Cart</li>
+                    <li>Store builder</li>
+                </ul>
+
+                <ul class="links">
+                    <li>Mobile Commers</li>
+                    <li>Dropshipping</li>
+                    <li>Website devolopment</li>
+
+                </ul>
+
+                <ul class="links">
+                    <li>Point Of sale</li>
+                    <li>Hardware</li>
+                    <li>Software</li>
+
+                </ul>
+            </div>
+        </div>
+
+        <div class="f-part">
+            <h3>Promo</h3>
+            <img src="images/hero_1.jpg" alt="">
+            <h4>Finding Your Perfect Shose</h4>
+            <p>Promo From 15-25,2019</p>
+        </div>
+
+        <div class="f-part">
+            <h3>Contact Info</h3>
+            <div class="contact">
+                <i class="fa-solid fa-location-dot"></i>
+                <p>3st alawayed alexandria Egypt</p>
+            </div>
+            
+            <div class="contact">
+                <i class="fa-solid fa-phone"></i>
+                <p>+0201024404781</p>
+            </div>
+
+            <div class="contact">
+                <i class="fa-solid fa-envelope"></i>
+                <p>seenaseif@gmail.com</p>
+            </div>
+
+            <h3>Subscribe</h3>
+
+            <div class="Subscribe">
+                <input type="email  " placeholder="Email">
+                <a href="">SEND</a>
+            </div>
+        </div>
+    </div>
+
+    <p>Copyright @ 2021 All rights Serverd | this template is made by <span>SeifEldeen Mahmoud</span></p>
+</footer>
+
+
+    
+</body>
+</html>

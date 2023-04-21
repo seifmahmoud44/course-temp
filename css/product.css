@@ -1,0 +1,141 @@
+/* Global rules */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Cairo', sans-serif;
+}
+
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+:root{
+    --main-transition: 0.3s;
+    --main-color:blueviolet;
+    --gray-color:#919191;
+}
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    display: block;
+}
+
+.btn{
+    padding: 2px 25px;
+    background-color: blueviolet;
+    color: white;
+    border-radius: 6px;
+    font-size: 20px;
+    transition: var(--main-transition);
+    width: fit-content;
+    margin: 0 auto;
+
+}
+
+.btn:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 6px 10px 2px rgba(0, 0, 0, 0.233);
+    background-color: rgb(111, 41, 177);
+}
+
+.title{
+    text-align: center;
+    position: relative;
+    padding: 10px 0;
+    margin: 60px 0;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+/* where */
+
+.where {
+    background-color:#eee ;
+    padding: 20px 0;
+}
+
+.where span{
+    font-weight: bold;
+}
+
+/* product */
+
+.product .container{
+    display: flex;
+    gap:80px;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 60px 0;
+}
+
+@media (max-width: 900px){
+    .product .container{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
+
+.product .container p{
+    margin: 20px 0;
+}
+
+.product .container .price{
+    color: var(--main-color);
+    font-size: 24px;
+}
+
+.product .container form label{
+    margin-right:20px ;
+}
+
+.product .container .count{
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    margin: 20px 0;
+
+}
+
+.product .container .count p{
+    padding: 10px 30px;
+    margin: 0;
+}
+
+.product .container .count .add{
+    border: 1px solid var(--main-color);
+    padding: 10px 15px;
+    transition: var(--main-transition);
+    cursor: pointer;
+}
+
+.product .container .count .add:hover{
+    background-color: var(--main-color);
+}
+
+.product .container .count .add:first-child{
+    border-radius: 5px 0 0 5px;
+}
+
+.product .container .count .add:last-child{
+    border-radius: 0 5px 5px 0;
+}
+
+.product .container .count p:nth-child(2){
+    border-top: 1px solid #777;
+    border-bottom: 1px solid #777;
+}
+
+@media (max-width: 900px){
+    .product .dis{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+}

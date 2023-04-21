@@ -1,0 +1,149 @@
+
+.table .container table{
+    text-align: center;
+    border-spacing: 0;
+    border-radius: 20px;
+    overflow: hidden;
+
+    margin: 60px 0;
+} 
+
+th{
+    padding: 20px 0;
+}
+
+.table .container table tr:first-child{
+    width: 20px;
+}
+
+
+td,th,table
+{
+    border: 1px solid #EEE;
+}
+
+.table .container table img{
+    width: 150px;
+    padding: 20px 0;
+    
+}
+
+
+/* count */
+
+
+ .count{
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    margin: 20px auto;
+
+}
+
+ .count p{
+    padding: 10px 30px;
+    margin: 0;
+}
+
+ .count .add{
+    border: 1px solid var(--main-color);
+    padding: 10px 15px;
+    transition: var(--main-transition);
+    cursor: pointer;
+}
+
+ .count .add:hover{
+    background-color: var(--main-color);
+}
+
+ .count .add:first-child{
+    border-radius: 5px 0 0 5px;
+}
+
+ .count .add:last-child{
+    border-radius: 0 5px 5px 0;
+}
+
+ .count p:nth-child(2){
+    border-top: 1px solid #777;
+    border-bottom: 1px solid #777;
+}
+
+
+.x{
+    padding: 5px 20px;
+    background-color: var(--main-color);
+    width: fit-content;
+    margin: auto;
+    border-radius: 5px;
+
+}
+
+
+/* cart ditails */
+
+.cart-d .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-bottom: 60px;
+
+}
+.cart-d .container .left .c-btn{
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20PX;
+}
+
+.cart-d .container .left .c-btn a:last-child{
+    background-color: white;
+    color: var(--main-color);
+    border: 1px solid var(--main-color);
+}
+
+.cart-d .container .left .c-btn a:last-child:hover{
+    background-color: var(--main-color);
+    color: white;
+}
+
+.in form{
+    display: flex;
+    align-items: center;
+}
+
+.in form input:first-child{
+    padding: 5px;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid #ccc;
+    width: 70%;
+    padding-left: 20px;
+}
+
+
+
+.in form input:last-child{
+    font-size: 18px;
+    outline: none;
+    border: 0;
+}
+
+.right{
+    width: 200px;
+    text-align: end;
+}
+
+.right h3{
+    font-size: 30px;
+    border-bottom: 1px solid #777;
+    margin-bottom: 40px;
+}
+
+.right .di{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0;
+}
+
+

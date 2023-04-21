@@ -1,0 +1,183 @@
+.return .container{
+    border: 1px #ddd solid;
+    padding: 20px;
+    margin: 60px auto;
+}
+
+.return .container span{
+    color: var(--main-color);
+    cursor: pointer;
+}
+
+/* check */
+input, select{
+    outline: none;
+    padding: 5px;
+}
+
+input{
+    margin-top:10px ;   
+    display: block;
+    width: 100%;
+}
+label{
+    font-weight: bold;
+}
+
+
+.check .container{
+    margin-bottom: 60px;
+}
+
+.check .container > form{
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+@media (max-width: 900px){
+    .check .container > form{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.check .container > form .left{
+    flex-basis: 50%;
+    padding: 40px;
+    border: 1px solid #ddd;
+}
+
+@media (max-width: 900px){
+    .check .container > form .left{
+        width: 100%;
+    }
+}
+
+.check .container > form .left > div{
+    margin: 20px 0
+}
+
+.check .container > form .left input:nth-of-type(type="checkbox"){
+    display: block;
+    width: 100%;
+}
+
+.check .container > form .left .country select{
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.check .container > form .left .name{
+    display: flex;
+    gap: 20px;
+}
+
+.check .container > form .left .name div{
+    flex-basis: 50%;
+}
+.check .container > form .left .name div input{
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.four{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+}
+.four div{
+    flex-basis: 50%;
+}
+
+.four .s-z div:first-child,
+.four .e-p div:first-child{
+    margin-bottom: 20px;
+}
+
+.four input{
+    display: block;
+    width: 100%;
+}
+.other{
+    display: flex;
+    flex-direction: column;
+}
+
+.other textarea{
+    padding: 5px;
+    outline: none;
+    margin-top: 10px;
+    overflow: auto;
+}
+
+.creat input,
+.ship input{
+    all: revert;
+
+}
+
+.order{
+    border: 1px solid #ddd;
+    padding: 40px;
+}
+.check .container > form .right {
+    flex-basis: 50%;
+    padding: 0 40px;
+    text-align: left;
+}
+
+@media (max-width: 900px){
+    .check .container > form .right{
+        width: 100%;
+        border: 1px #ddd solid;
+        padding-top:40px ;
+        padding-bottom:40px ;
+    }
+}
+
+.check .container > form .right .coupon{
+    border: 1px solid #ddd;
+    padding: 40px;
+    margin-bottom: 20px;
+}
+
+.check .container > form .right .coupon .code .btn{
+    margin-top: 20px;
+}
+
+
+.check .container > form .right .order .info .layer{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.check .container > form .right .order .info .layer p:first-child{
+    font-weight: bold;
+}
+
+.check .container > form .right .order .info .layer.not{
+    border: none;
+}
+
+.check .container > form .right .order .info h4{
+    padding: 20px;
+    border: 1px solid #ddd;
+    margin: 20px 0;
+    color: var(--main-color);
+}
+.btn.last{
+    width: 100%;
+    margin-top: 60px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+}  
+

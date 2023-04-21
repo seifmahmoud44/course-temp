@@ -1,0 +1,134 @@
+.main-shop .container{
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 60px 0;
+}
+
+
+
+.main-shop .container .leftside .filter,
+.main-shop .container .leftside .categores{
+    border: 1px solid #777;
+    padding: 15px;
+    border-radius: 5px;
+
+}
+
+.main-shop .container .leftside .categores .layer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-shop .container .leftside .filter{
+    margin-top: 20px;
+}
+
+.main-shop .container .leftside .filter .f-layer:nth-child(2){
+    margin: 20px 0;
+}
+
+.main-shop .container .leftside .filter .f-layer .check input{
+    margin-right: 10px;
+}
+
+.main-shop .container .leftside .filter .f-layer .color-s .color p{
+    margin-left: 30px;
+    position: relative;
+}
+
+.main-shop .container .leftside .filter .f-layer .color-s .color span{
+    width: 10px;
+    height: 10px;
+    background-color: red;
+    position: absolute;
+    transform: translateY(10px);
+    border-radius: 50%;
+} 
+
+.main-shop .container .leftside .filter .f-layer .color-s .color:nth-child(2) span{
+    background-color: green;
+}
+
+.main-shop .container .leftside .filter .f-layer .color-s .color:nth-child(3) span{
+    background-color: blue;
+
+}
+
+.main-shop .container .leftside .filter .f-layer .color-s .color:nth-child(4) span{
+    background-color: purple;
+
+}
+
+.right-side{
+    flex-grow: 1;
+}
+
+.right-side .head{
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+    padding: 15px;
+
+}
+
+.right-side .head select{
+    margin-right: 10px;
+    padding: 5px;
+    outline: none;
+    border-radius: 5px;
+    background-color: #777;
+    color: white;
+}
+
+.right-side .grid-s{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    text-align: center;
+
+}
+
+@media (max-width: 900px){
+    .right-side .grid-s{
+        height: 1000px;
+        overflow: auto;
+    }
+}
+
+.right-side .grid-s .card{
+    box-shadow: 0 0 10px 0px #00000014;
+}
+
+.right-side .grid-s .card img{
+    width: 100%;
+}
+
+.right-side .grid-s .card h3{
+    margin-top: 20px;
+    color: var(--main-color);
+}
+
+.right-side .grid-s .card p{
+    color: #777;
+}
+
+.right-side .grid-s .card .price{
+    color: var(--main-color);
+    margin-bottom: 20px;
+}
+
+/* pics */
+
+.pics .title::after{
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 5px;
+    background-color: blueviolet;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 50px;
+}
